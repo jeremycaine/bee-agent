@@ -1,7 +1,11 @@
 # bee-agent
 Development work with Bee Agent platform
 
+## setup
+```
 npm init
+```
+
 update package.json for module type and dev script
 ```
 {
@@ -23,10 +27,16 @@ update package.json for module type and dev script
 }
 
 ```
+Now install modules
+```
 ollama pull llama3.1
 
 npm install dotenv
 npm install bee-agent-framework
 npm install ollama
+```
 
-npm run dev
+# apps
+[basic agent](index.js) - `npm run dev`
+
+[workflow](workflow.js) - `node workflow.js`
